@@ -1,13 +1,18 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { useState } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="min-h-screen flex justify-center items-center">
+        <h1 className="text-3xl font-bold text-blue-600">
+          Install and Setup Vite, React and Typescript with Tailwind CSS 3
+        </h1>
+      </div>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
@@ -18,7 +23,7 @@ function App() {
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
         </p>
-        <p>
+        <p>I have a meeting to show this off at 15:00 on Wednesday
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -37,9 +42,9 @@ function App() {
             Vite Docs
           </a>
         </p>
-      </header>
+      </header> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
