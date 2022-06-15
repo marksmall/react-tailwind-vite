@@ -17,13 +17,19 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', '@typescript-eslint/recommended', 'react-hooks', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'react-hooks', 'prettier', 'import'],
   rules: {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
   },
   settings: {
+    react: {
+      version: 'detect',
+    },
     'import/resolver': {
+      alias: {
+        map: [['~', 'src']],
+      },
       typescript: {},
     },
   },
